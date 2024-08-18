@@ -1,0 +1,8 @@
+.success{
+    color:rgb(215, 179, 245)
+}
+.special{
+    background-color: blue;
+    font-size: 50px;
+    font-style: italic;
+}

@@ -1,0 +1,31 @@
+<div class="container p-5">
+<h1 > My Name is {{userName}}</h1>
+<hr>
+<input type="text" class="form-control" [(ngModel)]="userName"/>
+<h1 >{{userName}}</h1>
+<button class="btn btn-danger" 
+[disabled]="!userNameStatus"
+(click)="onresetUserName()">
+Add
+</button>
+<button class="btn btn-info" 
+(click)="displayDetails()">
+desplay details
+
+</button>
+@if(details){
+    <p>mostafa</p>
+} 
+@else {
+    <p>fawzy</p>
+}
+<hr>
+@for(name of userNames ;track $index){
+    <p
+        [ngClass]="{'success':$index > 3,'special':$index>3}">{{userNames}}</p>
+}
+
+<hr>
+
+
+    
